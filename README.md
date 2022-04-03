@@ -85,7 +85,7 @@ public class CheckVPN implements Listener {
         HashMap<HashMapKeys, JsonElement> checkedProxy = this.iWaveGuardAPI.checkProxy("IP to check", "license" ->
         (this.configManager.getConfig(Config.LICENSE, ID.LICENSE.getId()), "HWID" ->(Licensing.getHWID())));
 
-        final boolean isProxy = !elements.get(HashMapKeys.PROXY).isJsonNull() && elements.get(HashMapKeys.PROXY).getAsBoolean();
+        final boolean isProxy = !checkedProxy.get(HashMapKeys.PROXY).isJsonNull() && checkedProxy.get(HashMapKeys.PROXY).getAsBoolean();
 
         if (isProxy) {
             System.out.println("IP is a VPN");
