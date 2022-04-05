@@ -28,7 +28,7 @@ public class WaveGuardTest extends JavaPlugin {
     }
 
 
-    public IWaveGuardAPI getiWaveGuardAPI() {
+    public IWaveGuardAPI getIWaveGuardAPI() {
         return iWaveGuardAPI;
     }
 
@@ -40,7 +40,7 @@ public class WaveGuardTest extends JavaPlugin {
         return floodgateHook;
     }
 
-    public IVersionHelper getiVersionHelper() {
+    public IVersionHelper getIVersionHelper() {
         return iVersionHelper;
     }
 
