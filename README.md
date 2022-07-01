@@ -11,7 +11,7 @@ public class WaveGuardTest extends JavaPlugin {
     private final ConfigManager configManager = waveguard.getConfigManager();
     private final IWaveGuardAPI iWaveGuardAPI = waveguard.getIWaveGuardAPI();
 
-    private final FloodgateHook floodgateHook = wavegurd.getFloodgateHook();
+    private final FloodgateHook floodgateHook = waveguard.getFloodgateHook();
     private final IVersionHelper iVersionHelper = waveguard.getIVersionHelper();
     private final WebhookClient webhookClient = waveguard.getWebhookClient();
 
